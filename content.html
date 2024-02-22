@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="index.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Dashboard Panel</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="img/logo.png" alt="logo">
+            </div>
+
+            <span class="logo_name">Dashboard</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="content.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Content</span>
+                </a></li>
+                <li><a href="Analytics.html">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Like</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Comment</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <!--<img src="images/profile.jpg" alt="">-->
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="text">Amployee Details</span>
+                </div>
+                
+            </div> 
+            <div class="container">
+                <h2>List of the All Amployee</h2>
+                <ul class="responsive-table">
+                  <li class="table-header">
+                    <div class="col col-1">No.</div>
+                    <div class="col col-2">Amployee Name</div>
+                    <div class="col col-3">Post</div>
+                    <!-- <div class="col col-4">Payment Status</div> -->
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">01</div>
+                    <div class="col col-2" data-label="Customer Name">Nikita Nimore</div>
+                    <!-- <div class="col col-3" data-label="Amount">$450</div> -->
+                    <div class="col col-4" data-label="Payment Status"> Project Owner</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">02</div>
+                    <div class="col col-2" data-label="Customer Name">Ankit Kumar singh</div>
+                    <!-- <div class="col col-3" data-label="Amount">$380</div> -->
+                    <div class="col col-4" data-label="Payment Status">Projact Manager</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">03</div>
+                    <div class="col col-2" data-label="Customer Name">Dhiraj kumar Singh</div>
+                    <!-- <div class="col col-3" data-label="Amount">$320</div> -->
+                    <div class="col col-4" data-label="Payment Status">Team Leader</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">04</div>
+                    <div class="col col-2" data-label="Customer Name">Saloni patel</div>
+                    <!-- <div class="col col-3" data-label="Amount">$350</div> -->
+                    <div class="col col-4" data-label="Payment Status">HR</div>
+                  </li>
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">05</div>
+                    <div class="col col-2" data-label="Customer Name">Mumtaj Hussain</div>
+                    <!-- <div class="col col-3" data-label="Amount">$350</div> -->
+                    <div class="col col-4" data-label="Payment Status">TL</div>
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
